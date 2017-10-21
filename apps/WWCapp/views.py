@@ -19,10 +19,10 @@ def donations(request):
         ["Soup Cans", "Food", "Available"],
         ["1 Furnished Room", "Housing", "Available"],
     ]
-    print items[0]
+    print items
     content = {
         'user': "Sushma",
-        'requests': items[0]
+        'items': items
     }
     return render(request, 'WWCapp/donorpage.html', content)
 
@@ -31,4 +31,10 @@ def register(request):
 
 def login(request):
     print request.POST
+    return redirect('/donor')
+
+def donateitems(request):
+    return render(request, 'WWCapp/donateitems.html')
+
+def donatesubmit(request):
     return redirect('/donor')

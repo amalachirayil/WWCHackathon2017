@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Donate Items</title>
+  </head>
+  <body>
+    <form class="donate-form" action="/donatesubmit" method="post">
+      <h1>Donate Items</h1>
+      {% csrf_token %}
+      <label for = "item">Item Name:</label><input type = "text" id = "item" name = "item">
+      <br>
+      <label for = "category">Category:</label><input type = "text" id = "category" name = "category">
+      <br>
+      <label for = "contactinfo">Contact Info:</label><input type = "text" id = "contact" name = "contact">
+      <br>
+      <label for = "location">Location:</label><input type = "text" id = "location" name = "location">
+      <br>
+      <input type = "hidden" name = "action" value = "donate">
+      <br>
+      <button type = "submit">Offer Donate</button>
+    </form>
+  </body>
+</html>

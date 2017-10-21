@@ -9,7 +9,9 @@
 
   </head>
   <body>
-    <h1>DonorPage</h1>
+<div class="donor">
+
+    <a href="/donateitems"><h2>Donate Items</h2></a>
     <h2>Hello {{user}}, Thank You for Donating!</h2>
     <div class="sidebar">
       <h3>Categories</h3>
@@ -27,15 +29,15 @@
           <th>Category</th>
           <th>Status</th>
         </tr>
-
-      {% for req in requests %}
+      {% for req in items %}
         <tr>
-          <td>req</td>
-          <td>req[1]</td>
-          <td>req[2]</td>
+          <td>{{req.0}}</td>
+          <td>{{req.1}}</td>
+          <td>{{req.2}}</td>
         </tr>
         {% endfor %}
       </table>
     </div>
+  </div>
   </body>
 </html>
