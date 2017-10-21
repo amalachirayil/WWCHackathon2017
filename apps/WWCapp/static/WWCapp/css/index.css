@@ -1,0 +1,29 @@
+.main{
+  background-image: url("https://i.ytimg.com/vi/3wsegE01zUE/maxresdefault.jpg");
+  height: 700px;
+  /* opacity: 0.2; filter: alpha(opacity=20); */
+}
+
+.heading{
+  text-align: center;
+}
+
+.inner{
+  margin: auto;
+  position: relative;
+  width: 800px;
+}
+
+.registerform, .loginform{
+  width: 230px;
+  background-color: white;
+  opacity: 10;
+  padding: 50px;
+  display: inline-block;
+  margin: 30px;
+  height: 200px;
+}
+
+.loginform{
+  vertical-align: top;
+}

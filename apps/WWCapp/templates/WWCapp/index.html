@@ -2,9 +2,52 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>NapaStrong</title>
+    {% load staticfiles %}
+
+    <link rel="stylesheet" href="{% static 'WWCapp/css/index.css' %}" media="screen" title="no title"  charset="utf-8">
+
   </head>
   <body>
-    <h1>hi</h1>
+    <div class="main">
+      <div class="inner">
+        <h1 class="heading">NapaFire</h1>
+        <div class="registerform">
+          <form class="register-form" action="/register" method="post">
+            <h1>Sign Up</h1>
+            {% csrf_token %}
+            <label for = "status">Need A Request:</label><input type = "radio" id = "status" value="needarequest" name = "status">
+            <label for = "status">Donor:</label><input type = "radio" id = "status" value="donor" name = "status">
+            <br>
+            <label for = "first">First Name:</label><input type = "text" id = "first" name = "first">
+            <br>
+            <label for = "last">Last Name:</label><input type = "text" id = "last" name = "last">
+            <br>
+            <label for = "username">Username:</label><input type = "text" id = "alias" name = "alias">
+            <br>
+            <label for = "email">Email:</label><input type = "text" id = "email" name = "email">
+            <br>
+            <label for = "password">Password:</label><input type = "password" id = "password" name = "password">
+            <br>
+            <label for = "confirm">Confirm:</label><input type = "password" id = "confirm" name = "confirm">
+            <input type = "hidden" name = "action" value = "register">
+            <br>
+            <button type = "submit">Sign Up</button>
+          </form>
+        </div>
+        <div class="loginform">
+          <form class="login-form" action="/login" method="post">
+            <h1>Welcome Back,</h1>
+            {% csrf_token %}
+            <label for = "email">Email:</label><input type = "text" id = "email" name = "email">
+            <br>
+            <label for = "password">Password:</label><input type = "password" id = "password" name = "password">
+            <input type = "hidden" name = "action" value = "login">
+            <br>
+            <button type = "submit">Log In</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
