@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>NapaStrong: Request Items</title>
+    {% load staticfiles %}
+
+ <!-- <link rel="stylesheet" href="{% static 'WWCapp/css/requestdonations.css' %}" media="screen" title="no title"  charset="utf-8"> -->
+
+  </head>
+
+  <body>
+  	<h1>Request specific items</h1>
+  	<a href="/viewdonations" class="button">View items available</a>
+
+    <form class="donate-form" action="/requestsubmit" method="post">
+       <h1>Request Items</h1>
+       {% csrf_token %}
+       <label for = "item">Item Name:</label><input type = "text" id = "item" name = "item">
+       <br>
+       <label for = "category">Category:</label><input type = "text" id = "category" name = "category">
+       <br>
+       <label for = "contactinfo">Contact Info:</label><input type = "text" id = "contact" name = "contact">
+       <br>
+       <input type = "hidden" name = "action" value = "donate">
+       <br>
+       <button type = "submit">Make request</button>
+     </form>
+
+  </body>

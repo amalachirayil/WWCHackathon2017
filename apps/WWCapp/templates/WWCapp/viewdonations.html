@@ -2,6 +2,11 @@
   <head>
     <meta charset="utf-8">
     <title>NapaStrong: View Donations</title>
+    <style>
+		img { 
+    	width:70%; 
+		}
+</style>
     {% load staticfiles %}
 
  <link rel="stylesheet" href="{% static 'WWCapp/css/viewdonations.css' %}" media="screen" title="no title"  charset="utf-8"> 
@@ -10,8 +15,10 @@
 
   <body>
   	<div class="main">
-  		<h1>View available donations </h1> 		
-		<a href="/donationRequest" class="button">Request Items</a>		
+  		<img src="/static/WWCapp/images/viewDonations.jpg" alt="View Donations" align="middle">	
+  		<div style="text-align: center;">
+			<a href="/requestitems" class="button">Request Items</a>		
+		</div>
 		<table style="width:60%">
   			<tr>
     			<th>Item</th>
