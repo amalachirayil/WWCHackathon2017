@@ -13,8 +13,18 @@ def victimrequests(request):
     return render(request, 'WWCapp/victimpage.html', content)
 
 def donations(request):
-
-    return render(request, 'WWCapp/donorpage.html')
+    items = [
+        ["iPhone Chargers", "Electronics", "Available"],
+        ["Walkers", "Necessity", "Available"],
+        ["Soup Cans", "Food", "Available"],
+        ["1 Furnished Room", "Housing", "Available"],
+    ]
+    print items[0]
+    content = {
+        'user': "Sushma",
+        'requests': items[0]
+    }
+    return render(request, 'WWCapp/donorpage.html', content)
 
 def register(request):
     return redirect('/requests')
