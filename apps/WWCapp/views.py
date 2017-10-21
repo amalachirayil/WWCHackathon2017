@@ -22,3 +22,7 @@ def register(request):
 def login(request):
     print request.POST
     return redirect('/donor')
+
+def viewdonations(request):
+
+    return render(request, 'WWCapp/viewdonations.html')

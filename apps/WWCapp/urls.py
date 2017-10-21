@@ -5,5 +5,6 @@ urlpatterns = [
     url(r'^requests', views.victimrequests),
     url(r'^donor', views.donations),
     url(r'^register', views.register),
-    url(r'^login', views.login)
+    url(r'^login', views.login),
+    url(r'^viewdonations', views.viewdonations)
 ]
