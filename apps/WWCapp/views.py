@@ -5,12 +5,12 @@ def index(request): #signup/login
     response = "Hello, I am your first request!"
     return render(request, 'WWCapp/index.html')
 
-def victimrequests(request):
-    content = {
-            'first_name': "sushma"
-
-        }
-    return render(request, 'WWCapp/victimpage.html', content)
+def donationRequest(request):
+    #content = {
+    #        'first_name': "sushma"
+#
+ #       }
+    return render(request, 'WWCapp/donationRequest.html')
 
 def donations(request):
 
