@@ -28,3 +28,12 @@ th, td {
   margin: auto;
 
 }
+
+.donorheading{
+  /*background: url("http://clipart-library.com/images/zcX5G5nMi.jpg");*/
+  /*height: 150px;*/
+}
+
+div.requests h2{
+  text-align: center;
+}

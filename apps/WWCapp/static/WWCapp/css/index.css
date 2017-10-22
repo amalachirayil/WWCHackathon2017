@@ -1,11 +1,17 @@
+*{
+  margin: 0
+}
 .main{
-  background-image: url("https://i.ytimg.com/vi/3wsegE01zUE/maxresdefault.jpg");
-  height: 700px;
+  background-image: url("https://s3.amazonaws.com/winecountry-media/wp-content/uploads/sites/4/2015/05/napa-valley-wine-tour.jpg");
+  height: 1000px;
   /* opacity: 0.2; filter: alpha(opacity=20); */
 }
 
 .heading{
   text-align: center;
+  margin: auto;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .inner{
@@ -18,10 +24,13 @@
   width: 230px;
   background-color: white;
   opacity: 10;
-  padding: 50px;
+  padding: 25px;
   display: inline-block;
   margin: 30px;
-  height: 200px;
+  height: 220px;
+  opacity: 0.86;
+  border-radius: 20px;
+  margin-top: 130px;
 }
 
 .loginform{
